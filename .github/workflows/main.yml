@@ -1,11 +1,15 @@
-name: Hola putisimo mundo que tal
+name: Hello World Training Workflow
 
 on:
-    workflow_dispatch:
-      
+  workflow_dispatch:
+
 jobs:
-  saludar:
+  greet:
     runs-on: ubuntu-latest
     steps:
-      - name: Hola putisimo
-        run: echo "Hola putisimo"
+      - name: Greet the User
+        run: echo "Hello World!"
+      # LS will simply list all files in the current directory to compare before and after
+      - run: ls -l
+      - uses: actions/checkout@v6
+      - run: ls -l
