@@ -1,0 +1,11 @@
+name: Hola putisimo mundo que tal
+
+on:
+    workflow_dispatch:
+      
+jobs:
+  saludar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hola putisimo
+        run: echo "Hola putisimo"
